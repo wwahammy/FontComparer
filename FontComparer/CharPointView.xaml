@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="FontComparer.CharPointView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:fontComparer="clr-namespace:FontComparer"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"
+             d:DataContext="{d:DesignInstance fontComparer:CharPointViewModel,
+                                         IsDesignTimeCreatable=True}">
+    <Grid>
+      <Grid.ColumnDefinitions>
+          <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions> 
+    
+    
+    <TextBlock Grid.Column="0" FontFamily="{Binding Font}" Text="{Binding Char}" />
+    <TextBlock Grid.Column="1" FontFamily="{Binding Font}" Text="{Binding Char}" FontStyle="Italic" />
+    <TextBlock Grid.Column="2" FontFamily="{Binding Font}" Text="{Binding Char}" FontWeight="Bold"/>
+    <TextBlock Grid.Column="3" FontFamily="{Binding Font}" Text="{Binding Char}" FontWeight="Bold" FontStyle="Italic"/>
+    </Grid>
+</UserControl>

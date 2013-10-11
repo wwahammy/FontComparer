@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NDragDrop</name>
+    </assembly>
+    <members>
+        <member name="T:NDragDrop.DraggableVisualFeedback">
+            <summary>
+            DraggableVisualFeedback
+            </summary>
+        </member>
+        <member name="M:NDragDrop.DraggableVisualFeedback.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>
